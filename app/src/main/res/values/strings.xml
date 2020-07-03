@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">four2five</string>
+    <string name="intro">Hello,Sudar</string>
+    <string name="main">What u Want?</string>
+    <string name="dbtext">DataBinding</string>
+    <string name="vbtext">ViewBinding</string>
+</resources>
