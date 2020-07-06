@@ -4,6 +4,7 @@
     <string name="main">What u Want?</string>
     <string name="dbtext">DataBinding</string>
     <string name="vbtext">ViewBinding</string>
+    <string name="fragtext">Fragment</string>
     <string name="title01">어렵지 않나요?</string>
     <string name="title02">아주 어렵다고 생각해요</string>
     <string name="title03">기분 탓이 아니에요</string>

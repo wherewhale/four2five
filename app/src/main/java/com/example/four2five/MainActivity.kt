@@ -4,8 +4,13 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.FrameLayout
+import android.widget.ImageView
+import androidx.fragment.app.Fragment
 
 import com.example.four2five.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.activity_fragment_exam.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 data class CheckData(
     var checkone: Int,
@@ -14,6 +19,7 @@ data class CheckData(
 
 
 class MainActivity : AppCompatActivity() {
+
 
     private lateinit var binding: ActivityMainBinding
 
@@ -34,6 +40,19 @@ class MainActivity : AppCompatActivity() {
                 checkData.checkone = 0
             }
 
+        }
+
+        binding.fragButton.setOnClickListener{
+            if (checkData.checktwo == 0) {
+                binding.view.visibility=View.VISIBLE
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.view, FragmentExam())
+                    .commit()
+                checkData.checktwo = 1
+            } else {
+                binding.view.visibility=View.INVISIBLE
+                checkData.checktwo = 0
+            }
         }
 
 
