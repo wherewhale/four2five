@@ -1,7 +1,9 @@
 package com.example.four2five
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 
 import com.example.four2five.databinding.ActivityMainBinding
 
@@ -23,12 +25,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
         var checkData = CheckData(0, 0)
-        binding.vbinding.setOnClickListener{
-            if(checkData.checkone == 0){
+        binding.vbinding.setOnClickListener {
+            if (checkData.checkone == 0) {
                 binding.change.text = "ViewBinding"
                 checkData.checkone = 1
-            }
-            else{
+            } else {
                 binding.change.text = "What U Want?"
                 checkData.checkone = 0
             }
@@ -38,5 +39,9 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    fun showDatabinding(view: View){
+        val intent = Intent(this, RecyclerViewModel::class.java)
+        startActivity(intent)
+    }
 
 }

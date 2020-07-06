@@ -4,4 +4,11 @@
     <string name="main">What u Want?</string>
     <string name="dbtext">DataBinding</string>
     <string name="vbtext">ViewBinding</string>
+    <string name="title01">어렵지 않나요?</string>
+    <string name="title02">아주 어렵다고 생각해요</string>
+    <string name="title03">기분 탓이 아니에요</string>
+    <string name="title04">실제로 어려운게 맞아요</string>
+    <string name="title05">그렇지 않을까요?</string>
+    <string name="title06">이게 별로 안어려우면 서러워서 살겠어요?</string>
+
 </resources>
