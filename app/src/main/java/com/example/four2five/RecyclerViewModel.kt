@@ -20,13 +20,14 @@ class RecyclerViewModel : AppCompatActivity() {
             R.layout.activity_recycler_view_model
         )
 
-        val list = ArrayList<SampleItem>()
-        list.add(SampleItem(getDrawable(R.drawable.image01)!!, getString(R.string.title01)))
-        list.add(SampleItem(getDrawable(R.drawable.image02)!!, getString(R.string.title02)))
-        list.add(SampleItem(getDrawable(R.drawable.image03)!!, getString(R.string.title03)))
-        list.add(SampleItem(getDrawable(R.drawable.image04)!!, getString(R.string.title04)))
-        list.add(SampleItem(getDrawable(R.drawable.image05)!!, getString(R.string.title05)))
-        list.add(SampleItem(getDrawable(R.drawable.image06)!!, getString(R.string.title06)))
+        val list = ArrayList<SampleItem>(listOf(
+            SampleItem(getDrawable(R.drawable.image01)!!, getString(R.string.title01)),
+            SampleItem(getDrawable(R.drawable.image02)!!, getString(R.string.title02)),
+            SampleItem(getDrawable(R.drawable.image03)!!, getString(R.string.title03)),
+            SampleItem(getDrawable(R.drawable.image04)!!, getString(R.string.title04)),
+            SampleItem(getDrawable(R.drawable.image05)!!, getString(R.string.title05)),
+            SampleItem(getDrawable(R.drawable.image06)!!, getString(R.string.title06))))
+
 
 
         val adapter = RecyclerAdapter(list)

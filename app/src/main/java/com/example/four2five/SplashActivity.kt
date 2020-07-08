@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.example.four2five.data.sangsu.SPLASH_VIEW_TIME
+import com.example.four2five.data.Data.SPLASH_VIEW_TIME
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -17,7 +17,6 @@ class RecyclerAdapter(private val items: ArrayList<SampleItem>) :
         val item = items[position]
         holder.apply {
             bind(item)
-            itemView.tag = item
         }
     }
 

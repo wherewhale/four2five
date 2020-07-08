@@ -7,16 +7,11 @@ import android.view.View
 import android.widget.FrameLayout
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
+import com.example.four2five.data.CheckData
 
 import com.example.four2five.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_fragment_exam.*
 import kotlinx.android.synthetic.main.activity_main.*
-
-data class CheckData(
-    var checkone: Int,
-    var checktwo: Int
-)
-
 
 class MainActivity : AppCompatActivity() {
 
